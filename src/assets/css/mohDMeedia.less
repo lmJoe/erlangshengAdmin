@@ -1,0 +1,261 @@
+.appSurvey{
+  width:100%;
+  .appSurveyContainer{
+    .headContainer{
+      height: 50px;
+      line-height: 50px;
+      background: #fff;
+      margin-bottom: 20px;
+      display: flex;
+      padding:0 20px;
+      justify-content:space-between;
+      border-bottom: 3px solid #fff;
+      border-left: 1px solid #EFEFEF;
+      .pagetarge{
+        display: flex;
+        justify-content:space-between;
+        .spanBtn{
+          
+        }
+        .arget{
+          margin-left: 5px;
+          display: none;
+          width: 20px;
+          background: url(../imgs/norm.png) no-repeat center center;
+          background-size: 80%;
+          cursor: pointer;
+          position:relative;
+          .argetTxt{
+            display:none;
+            position:absolute;
+            top:17px;
+            left:27px;
+            width:700px;
+            padding:20px;
+            background:#EBEEF5;
+            z-index:10;
+            text-align:left;
+            h3{
+              font-size:18px;
+              color:#333;
+              line-height:30px;
+            }
+            p{
+              font-size:14px;
+              color:#666;
+              line-height:25px;
+            }
+          }
+          
+        }
+        .arget:hover .argetTxt{
+          display:block;
+        }
+      }
+      .rightSelect{
+        .MenuData{
+          width:200px;
+          height: 40px;
+          line-height: 40px;
+          color: #606266;
+          outline: 0;
+          padding: 0 15px;
+          background-color: #FFF;
+          border-radius: 4px;
+          border: 1px solid #DCDFE6;
+        }
+        .MenuLevel{
+          .menuBox{
+            padding:10px 0;
+            height:500px;
+            overflow: scroll;
+            background:#fff;
+            position:relative;
+            z-index:10;
+            .oneLevel{
+              width:100%;
+              position:relative;
+              font-size: 12px;
+              padding-left: 15px;
+              box-sizing: border-box;
+              height: 26px;
+              line-height: 26px;
+              cursor:pointer;
+              .twoLevelBox{
+                  background:#fff;
+                  position:absolute;
+                  top:0;
+                  left:-200px;
+                .twoLevel{
+                  width: 200px;
+                  padding-left: 15px;
+                  box-sizing: border-box;
+                  height: 26px;
+                  line-height: 26px;
+                  cursor:pointer;
+                }
+                .threeLevelBox{
+                  background:#fff;
+                  position:absolute;
+                  top:0;
+                  left:-200px;
+                  .threeLevel{
+                    width: 200px;
+                    padding-left: 15px;
+                    box-sizing: border-box;
+                    height: 26px;
+                    line-height: 26px;
+                    cursor:pointer;
+                  }
+                }
+              }
+             
+            }
+            .oneLevel:hover{
+              background:#396FFf;
+              color:#fff;
+            }
+            .oneLevel:hover .twoLevel{
+              display:block;
+            }
+          }
+        }
+      }
+    }
+    .surveyContainer{
+      margin:15px;
+      .surveyTop{
+        background: #fff;
+        padding: 30px 50px;
+        h3{
+          text-align:left;
+          font-size: 14px;
+          color: #323437;
+          font-weight: 700;
+          line-height: 35px;
+        }
+        .surveyDataTop{
+          margin-bottom: 20px;
+          .surveySort{
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            color: #808492;
+            font-size: 12px;
+          }
+          .surveyDatatitle{
+            color:#fff;
+          }
+        }
+        .surveyDataBottom{
+          .surveyDataNum{
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            font-size: 22px;
+            color: #3C4353;
+            border-right: 1px solid #F2F2F6;
+            font-family: '71mksd1ab';
+          }
+          .surveyDatatitle{
+            // width: 4%;
+            display: block;
+            float: left;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            color: #808492;
+            line-height:24px;
+            font-size: 12px!important;
+          }
+        }
+      }
+      .surveyEchart{
+        background: #fff;
+        padding: 30px 50px;
+        border-top: 1px solid #E6E6E6;
+        margin:20px 0;
+        .DMtop{
+          display: flex;
+          justify-content:space-between;
+          margin-bottom: 15px;
+          h2{
+            font-size: 14px;
+            color: #323437;
+            font-weight: 700;
+            line-height:35px;
+          }
+          .surveyDown{
+            font-size: 14px;
+            background: #396FFF;
+            color: #fff;
+            text-align: center;
+            padding: 0px 10px;
+            height: 34px;
+            line-height: 34px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 20px;
+            border-radius: 4px;
+          }
+        }
+        .surveyDate{
+          display: flex;
+          justify-content:start;
+          margin-bottom:20px;
+          .surveyTime{
+            margin-right:20px;
+          }
+        }
+        .surveyEchartBox{
+          .surveyEchartlist{
+            align-items: center;
+            .item{
+              font-size: 12px;
+              color: #333;
+              text-align: center;
+              padding: 15px 0;
+              border-bottom: 2px solid #fff;
+              cursor: pointer;
+            }
+            .active{
+              color: #396FFF;
+              border-bottom: 2px solid #396FFF;
+            }
+          }
+        }
+      }
+      .surveyDetailBox{
+        color: #808492;
+        background: #fff;
+        .DetailBoxTop{
+          display: flex;
+          justify-content:space-between;
+          padding:5px 20px;
+          h3{
+            font-size: 14px;
+            color: #323437;
+            font-weight: 700;
+            line-height: 35px;
+          }
+          .surveyDown{
+            font-size: 14px;
+            background: #396FFF;
+            color: #fff;
+            text-align: center;
+            padding: 0px 10px;
+            height: 34px;
+            line-height: 34px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 20px;
+            border-radius: 4px;
+            margin-top:15px;
+          }
+        }
+      }
+    }
+  }
+}

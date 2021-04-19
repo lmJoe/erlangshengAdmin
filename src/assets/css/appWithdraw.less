@@ -1,0 +1,163 @@
+.appWithdraw{
+  width:100%;
+  .appWithdrawContainer{
+    .widthdrawheadContainer{
+      height: 50px;
+      line-height: 50px;
+      background: #fff;
+      margin-bottom: 20px;
+      display: flex;
+      padding:0 20px;
+      justify-content:space-between;
+      border-bottom: 3px solid #fff;
+      border-left: 1px solid #EFEFEF;
+      .pagetarge{
+        display: flex;
+        justify-content:space-between;
+        .arget{
+          margin-left: 5px;
+          display: block;
+          width: 20px;
+          background: url(../imgs/norm.png) no-repeat center center;
+          background-size: 80%;
+          cursor: pointer;
+          position:relative;
+          .argetTxt{
+            display:none;
+            position:absolute;
+            top:17px;
+            left:27px;
+            width:700px;
+            padding:20px;
+            background:#EBEEF5;
+            z-index:10;
+            text-align:left;
+            h3{
+              font-size:18px;
+              color:#333;
+              line-height:30px;
+            }
+            p{
+              font-size:14px;
+              color:#666;
+              line-height:25px;
+            }
+          }
+          
+        }
+        .arget:hover .argetTxt{
+          display:block;
+        }
+      }
+      
+    }
+    .withdrawContainer{
+      margin:15px;
+      .withdrawTop{
+        background: #fff;
+        padding: 30px 50px;
+        .withdrawDataTop{
+          margin-bottom: 20px;
+          .withdrawSort{
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            color: #808492;
+            font-size: 12px;
+          }
+          .withdrawDatatitle{
+            color:#fff;
+          }
+        }
+        .withdrawDataBottom{
+          .withdrawDataNum{
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            font-size: 21px;
+            color: #3C4353;
+            border-right: 1px solid #F2F2F6;
+            font-family: '71mksd1ab';
+          }
+          .withdrawDatatitle{
+            // width: 4%;
+            display: block;
+            float: left;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            color: #808492;
+            line-height:24px;
+            font-size: 12px!important;
+          }
+        }
+      }
+      .withdrawEchart{
+        background: #fff;
+        padding: 30px 50px;
+        border-top: 1px solid #E6E6E6;
+        margin-top:15px;
+        .withdrawDate{
+          display: flex;
+          justify-content:start;
+          margin-bottom:20px;
+          .targetType{
+            margin-left:20px;
+            height: 35px;
+          }
+        }
+        .withdrawEchartBox{
+          .withdrawEchartlist{
+            align-items: center;
+            display: flex;
+            justify-items: flex-start;
+            .withdrawScreenStaus{
+              margin-right:20px;
+            }
+          }
+          .withdrawEchartimg{
+            margin-top:40px;
+          }
+        }
+      }
+      .withdrawpieChart{
+        background: #fff;
+        padding: 30px 50px;
+        border-top: 1px solid #E6E6E6;
+        margin-top: 15px;
+        .withdrawpieTop{
+          .pietargetType{
+            margin-left:15px;
+          }
+        }
+        .withdrawpieBottom{
+          margin-top:40px;
+          display:flex;
+          justify-content:space-between;
+        }
+      }
+      .withdrawDetailBox{
+        color: #808492;
+        background: #fff;
+        padding: 30px 50px;
+        margin-top:15px;
+        .withdrawBoxTop{
+          margin-bottom:20px;
+          display:flex;
+          justify-content:flex-start;
+          .detailBoxStatus{
+            margin-left:20px;
+            line-height:35px;
+          }
+          .detailBoxShowStatus{
+            margin-left:20px;
+            line-height:35px;
+
+          }
+        }
+      }
+    }
+  }
+}

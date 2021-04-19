@@ -1,0 +1,193 @@
+.appGold{
+  width:100%;
+  .appGoldContainer{
+    .appgoldheadContainer{
+      height: 50px;
+      line-height: 50px;
+      background: #fff;
+      margin-bottom: 20px;
+      display: flex;
+      padding:0 20px;
+      justify-content:space-between;
+      border-bottom: 3px solid #fff;
+      border-left: 1px solid #EFEFEF;
+      .appgoldpagetarge{
+        display: flex;
+        justify-content:space-between;
+        .arget{
+          margin-left: 5px;
+          display: block;
+          width: 20px;
+          background: url(../imgs/norm.png) no-repeat center center;
+          background-size: 80%;
+          cursor: pointer;
+          position:relative;
+          .argetTxt{
+            display:none;
+            position:absolute;
+            top:17px;
+            left:27px;
+            width:700px;
+            padding:20px;
+            background:#EBEEF5;
+            z-index:10;
+            text-align:left;
+            h3{
+              font-size:18px;
+              color:#333;
+              line-height:30px;
+            }
+            p{
+              font-size:14px;
+              color:#666;
+              line-height:25px;
+            }
+          }
+          
+        }
+        .arget:hover .argetTxt{
+          display:block;
+        }
+      }
+      
+    }
+    .appgoldContainer{
+      margin:15px;
+      .appgoldTop{
+        background: #fff;
+        padding: 30px 50px;
+        .appgoldDataTop{
+          margin-bottom: 20px;
+          .appgoldSort{
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            color: #808492;
+            font-size: 12px;
+          }
+          .appgoldDatatitle{
+            color:#fff;
+          }
+        }
+        .appgoldDataBottom{
+          .appgoldDataNum{
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            font-size: 21px;
+            color: #3C4353;
+            border-right: 1px solid #F2F2F6;
+            font-family: '71mksd1ab';
+          }
+          .appgoldDatatitle{
+            // width: 4%;
+            display: block;
+            float: left;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            color: #808492;
+            line-height:24px;
+            font-size: 12px!important;
+          }
+        }
+      }
+      .appgoldEchart{
+        background: #fff;
+        padding: 30px 50px;
+        border-top: 1px solid #E6E6E6;
+        margin-top:15px;
+        .appgoldDate{
+          display: flex;
+          justify-content:start;
+          margin-bottom:20px;
+          .appgoldtargetType{
+            margin-left:20px;
+            height: 35px;
+          }
+        }
+        .appgoldEchartBox{
+          .appgoldEchartlist{
+            align-items: center;
+            .appgoldScreenStaus{
+              margin-right:20px;
+            }
+          }
+          .appgoldEchartimg{
+            margin-top:40px;
+          }
+        }
+      }
+      .appgoldpieChart{
+        background: #fff;
+        padding: 30px 50px;
+        border-top: 1px solid #E6E6E6;
+        margin-top: 15px;
+        .appgoldpieTop{
+          display: flex;
+          justify-items: flex-start;
+          .appgoldpietargetType{
+            margin-left:15px;
+          }
+        }
+        .appgoldpieBottom{
+          margin-top:40px;
+          display:flex;
+          justify-content:space-around;
+        }
+      }
+      .appgoldDetailBox{
+        color: #808492;
+        background: #fff;
+        padding: 30px 50px;
+        margin-top:15px;
+        .appgoldBoxTop{
+          display: flex;
+          justify-items: flex-start;
+          margin-bottom:20px;
+          .download{
+            width:10%;
+            float:right;
+            a{
+              display:block;
+              color:#fff;
+            }
+          }
+          .goldDetails{
+            margin-left:20px;
+          }
+        }
+        .appgoldDetailBoxBottom{
+          .detailTable{
+            // overflow-x: auto;
+            width:100%;
+            .biaotou{
+              background: #F3F3F7;
+              color: #7C7C84;
+              font-size: 12px;
+              th{
+                padding: 10px;
+                // width: 130px;
+                border-right: 1px solid #E2E2EB;
+                border-bottom: 1px solid #E2E2EB;
+                text-align:center;
+              }
+            }
+            .biaoCont {
+              td{
+                padding: 10px;
+                // width: 130px;
+                font-size: 12px;
+                border-bottom: 1px solid #F2F2F6;
+                text-align:center;
+                color:#333;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

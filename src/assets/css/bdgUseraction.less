@@ -1,0 +1,117 @@
+.appSurvey{
+  width:100%;
+  .appSurveyContainer{
+    .headContainer{
+      height: 50px;
+      line-height: 50px;
+      background: #fff;
+      margin-bottom: 20px;
+      display: flex;
+      padding:0 20px;
+      justify-content:space-between;
+      border-bottom: 3px solid #fff;
+      border-left: 1px solid #EFEFEF;
+      .pagetarge{
+        display: flex;
+        justify-content:space-between;
+        .arget{
+          display:none;
+          margin-left: 5px;
+          // display: block;
+          width: 20px;
+          background: url(../imgs/norm.png) no-repeat center center;
+          background-size: 80%;
+          cursor: pointer;
+          position:relative;
+          .argetTxt{
+            display:none;
+            position:absolute;
+            top:17px;
+            left:27px;
+            width:700px;
+            padding:20px;
+            background:#EBEEF5;
+            z-index:10;
+            text-align:left;
+            h3{
+              font-size:18px;
+              color:#333;
+              line-height:30px;
+            }
+            p{
+              font-size:14px;
+              color:#666;
+              line-height:25px;
+            }
+          }
+          
+        }
+        .arget:hover .argetTxt{
+          display:block;
+        }
+      }
+      
+    }
+    .surveyContainer{
+      margin:15px;
+      .videoDataTop{
+        background:#fff;
+        padding:20px;
+        .box{
+          display: flex;
+          justify-content: flex-start;
+          margin-bottom:20px;
+          span{
+            width:100px;
+            display:block;
+            font-size:15px;
+            text-align:right;
+            line-height:35px;
+          }
+          .commonClass{
+            width:250px !important;
+          }
+          .commonClass1{
+            width:300px !important;
+          }
+        }
+        .Allbtn{
+          display: flex;
+          justify-content:flex-end;
+          button{
+            padding:10px 15px;
+          }
+          .btndata{
+            margin-right:10px;
+          }
+          .exportBtn{
+            margin-right:10px;
+            padding: 8px 15px;
+            display:block;
+            color: #FFF;
+            background-color: #409EFF;
+            border-color: #409EFF;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: .1s;
+            font-weight: 500;
+          }
+          .searchResult{
+            line-height:32px;
+            span{
+              color:red;
+            }
+          }
+        } 
+      }
+      .videoDataBottom{
+        background:#fff;
+        padding:20px;
+        margin-top:20px;
+        .count{
+          margin-top:20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+.appSurvey{
+  width:100%;
+  .appSurveyContainer{
+    .headContainer{
+      height: 50px;
+      line-height: 50px;
+      background: #fff;
+      margin-bottom: 20px;
+      display: flex;
+      padding:0 20px;
+      justify-content:space-between;
+      border-bottom: 3px solid #fff;
+      border-left: 1px solid #EFEFEF;
+      .pagetarge{
+        display: flex;
+        justify-content:space-between;
+        .arget{
+          margin-left: 5px;
+          display: block;
+          width: 20px;
+          background: url(../imgs/norm.png) no-repeat center center;
+          background-size: 80%;
+          cursor: pointer;
+          position:relative;
+          .argetTxt{
+            display:none;
+            position:absolute;
+            top:17px;
+            left:27px;
+            width:700px;
+            padding:20px;
+            background:#EBEEF5;
+            z-index:10;
+            text-align:left;
+            h3{
+              font-size:18px;
+              color:#333;
+              line-height:30px;
+            }
+            p{
+              font-size:14px;
+              color:#666;
+              line-height:25px;
+            }
+          }
+          
+        }
+        .arget:hover .argetTxt{
+          display:block;
+        }
+      }
+      
+    }
+    .surveyContainer{
+      margin:15px;
+      .surveyTop{
+        h3{
+          font-size: 14px;
+          color: #323437;
+          font-weight: 700;
+          margin-bottom: 15px;
+          text-align:left;
+        }
+        background: #fff;
+        padding: 30px;
+        .surveyDataTop{
+          display: flex;
+          justify-content:flex-start;
+          margin-bottom: 20px;
+          .surveySort{
+            width:7%;
+            display: block;
+            text-align: right;
+            padding-right: 10px;
+            box-sizing: border-box;
+            color: #808492;
+            font-size: 12px;
+          }
+          .surveyDatatitle{
+            width:5%;
+            color:#fff;
+          }
+        }
+        .surveyDataBottom{
+          display: flex;
+          justify-content:flex-start;
+          margin-bottom: 20px;
+          .surveyDataNum{
+            width:7%;
+            display: block;
+            text-align: right;
+            padding-right: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #3C4353;
+            font-weight:bold;
+            line-height:24px;
+            border-right: 1px solid #F2F2F6;
+            font-family: '71mksd1ab';
+          }
+          .surveyDatatitle{
+            width:5%;
+            display: block;
+            float: left;
+            text-align: right;
+            padding-right: 15px;
+            box-sizing: border-box;
+            color: #808492;
+            line-height:24px;
+            font-size: 12px!important;
+          }
+        }
+        .surveyDataBottom:last-child .surveyDataNum{
+          color: #808492 !important;
+          font-size: 12px !important;  
+          font-weight:normal;   
+        }
+      }
+      .videoBox{
+        background:#fff;
+        margin-top:20px;
+        padding: 30px 50px;
+        .videoBoxType{
+          margin-bottom:20px;
+          display: flex;
+          justify-items: flex-start;
+        }
+        .surveyTime{
+          margin-bottom:15px;
+        }
+        .basicData{
+          .accountTypeList{
+            margin:15px 0;
+            display: flex;
+            justify-items: flex-start;
+            width:25%;
+          }
+          .surveyEchart{
+            background: #fff;
+            .surveyDate{
+              
+              margin-bottom:20px;
+              
+            }
+            .surveyEchartBox{
+              .surveyEchartlist{
+                align-items: center;
+                .item{
+                  font-size: 12px;
+                  color: #333;
+                  text-align: center;
+                  padding: 15px 0;
+                  border-bottom: 2px solid #fff;
+                  cursor: pointer;
+                }
+                .active{
+                  color: #396FFF;
+                  border-bottom: 2px solid #396FFF;
+                }
+              }
+            }
+          }
+          .surveyDetailBox{
+            margin-top:30px;
+            color: #808492;
+            background: #fff;
+            .DetailBoxTop{
+              margin-bottom:20px;
+              display: flex;
+              justify-content:flex-end;
+              .surveyDown,.accountNatDown,.accountTypeDown{
+                font-size: 14px;
+                background: #396FFF;
+                color: #fff;
+                text-align: center;
+                padding: 0px 10px;
+                height: 34px;
+                line-height: 34px;
+                cursor: pointer;
+                text-decoration: none;
+                margin-right: 20px;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+        .accountData{
+          .accountNatureDetail{
+            margin-top:30px;
+            color: #808492;
+            background: #fff;
+            .natureDetailBoxTop{
+              margin-bottom:20px;
+              display: flex;
+              justify-content:flex-end;
+              .accountNatDown{
+                font-size: 14px;
+                background: #396FFF;
+                color: #fff;
+                text-align: center;
+                padding: 0px 10px;
+                height: 34px;
+                line-height: 34px;
+                cursor: pointer;
+                text-decoration: none;
+                margin-right: 20px;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+        .accountTypeData{
+          .accountNatureDetail{
+            margin-top:30px;
+            color: #808492;
+            background: #fff;
+            .typeDetailBoxTop{
+              margin-bottom:20px;
+              display: flex;
+              justify-content:flex-end;
+              .accountTypeDown{
+                font-size: 14px;
+                background: #396FFF;
+                color: #fff;
+                text-align: center;
+                padding: 0px 10px;
+                height: 34px;
+                line-height: 34px;
+                cursor: pointer;
+                text-decoration: none;
+                margin-right: 20px;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
